@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>DataMungingBases</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Bases\" />
+    <None Remove="Bases\Services\" />
+    <None Remove="Bases\Repos\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Interfaces\Services\" />
+    <None Remove="Interfaces\Repos\" />
+    <None Remove="Models\" />
+    <None Remove="CsvParser" />
+    <None Remove="FileHelpers" />
+    <None Remove="Attributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bases\" />
+    <Folder Include="Bases\Services\" />
+    <Folder Include="Bases\Repos\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Interfaces\Repos\" />
+    <Folder Include="Models\" />
+    <Folder Include="Attributes\" />
+  </ItemGroup>
+</Project>

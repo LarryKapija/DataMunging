@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="Ninject" Version="3.3.6" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Stubs\" />
+    <None Remove="Utils\" />
+    <None Remove="Tests\" />
+    <None Remove="Resources\CSV\Expenses.csv" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\CSV\" />
+    <None Remove="Resources\CSV\Expenses.csv" />
+    <None Remove="Resources\CSV\Categories.csv" />
+  </ItemGroup>  
+  <ItemGroup>    
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\CSV\" />
+    <Folder Include="Stubs\" />
+    <Folder Include="Utils\"/>
+    <Folder Include="Tests\"/>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CSV\Expenses.csv" />
+    <EmbeddedResource Include="Resources\CSV\Categories.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataMungingLibrary\DataMungingLibrary.csproj" />
+  </ItemGroup>
+</Project>
